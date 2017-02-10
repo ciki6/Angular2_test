@@ -1,0 +1,9 @@
+<h3>WebSocket</h3>
+<div>
+  <label>message: </label>
+  <input  placeholder="message" #msgs/>
+  <br/>
+  <button (click)="send(msgs.value)">send</button>
+  <button (click)="connect()">connect</button>
+  <button (click)="close()">disconnect</button>
+</div>
