@@ -24,7 +24,7 @@ import './rxjs-extensions';
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
     WebSocketComponent
   ],
   imports: [
