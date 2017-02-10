@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-websocket',
-  templateUrl : 'websocket.component.html'
+  selector: 'my-swiper',
+  templateUrl : 'swiper.component.html'
 })
 
 export class SwiperComponent{

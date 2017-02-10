@@ -35,7 +35,6 @@ const SWIPER_CONFIG: SwiperConfigInterface = {
     HeroesComponent,
     HeroSearchComponent,
     WebSocketComponent,
-    SwiperModule.forRoot(SWIPER_CONFIG),
     SwiperComponent
   ],
   imports: [
@@ -43,6 +42,7 @@ const SWIPER_CONFIG: SwiperConfigInterface = {
     FormsModule,
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
+    SwiperModule.forRoot(SWIPER_CONFIG),
     AppRoutingModule
   ],
   providers: [HeroService],

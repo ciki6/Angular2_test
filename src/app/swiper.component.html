@@ -1,14 +1,6 @@
-<div [swiper]="config" class="swiper-container" (indexChange)="onIndexChange($event)">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      Swiper content
-    </div>
+<swiper [config]="config" (indexChange)="onIndexChange($event)">
+  <div style="height:200px;background-color:blue;">
   </div>
-
-  <div class="swiper-scrollbar"></div>
-
-  <div class="swiper-pagination"></div>
-
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
+  <div style="height:200px;background-color:red;">
+  </div>
+</swiper>
