@@ -123,12 +123,12 @@ module.exports = function (options) {
          */
         {
           test: /\.css$/,
-          exclude: [ helpers.root('app/styles.css') ],
+          exclude: [ helpers.root('styles.css') ],
           use: ['to-string-loader', 'css-loader?minimize']
         },
         {
           test: /\.css$/,
-          include: [ helpers.root('app/styles.css') ],
+          include: [ helpers.root('styles.css') ],
           use: ['style-loader', 'css-loader?minimize']
         },
 
@@ -140,7 +140,7 @@ module.exports = function (options) {
         {
           test: /\.html$/,
           use: 'raw-loader',
-          exclude: [helpers.root('src/index.html')]
+          exclude: [helpers.root('index.html')]
         },
 
         /* File loader for supporting images, for example, in CSS files.
@@ -208,7 +208,7 @@ module.exports = function (options) {
       new ContextReplacementPlugin(
         // The (\\|\/) piece accounts for path separators in *nix and Windows
         /angular(\\|\/)core(\\|\/)src(\\|\/)linker/,
-        helpers.root('app'), // location of your src
+        helpers.root('src'), // location of your src
         {
           // your Angular Async Route paths relative to this root directory
         }

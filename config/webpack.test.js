@@ -157,7 +157,7 @@ module.exports = function (options) {
           enforce: 'post',
           test: /\.(js|ts)$/,
           loader: 'istanbul-instrumenter-loader',
-          include: helpers.root('app'),
+          include: helpers.root('src'),
           exclude: [
             /\.(e2e|spec)\.ts$/,
             /node_modules/
