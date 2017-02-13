@@ -21,6 +21,7 @@ import { SwiperComponent  } from './swiper.component';
 import { AppRoutingModule }     from './app-routing.module';
 import './rxjs-extensions';
 
+
 const SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
   slidesPerView: 'auto',
