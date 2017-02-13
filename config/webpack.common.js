@@ -25,7 +25,7 @@ const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
  */
 // const HMR = helpers.hasProcessFlag('hot');
 const METADATA = {
-  title: 'Angular2 Webpack Starter by @gdi2290 from @AngularClass',
+  title: 'Angular2 Test',
   baseUrl: '/',
   isDevServer: helpers.isWebpackDevServer()
 };
@@ -124,12 +124,12 @@ module.exports = function (options) {
         {
           test: /\.css$/,
           exclude: [ helpers.root('app/styles.css') ],
-          use: ['to-string-loader', 'css-loader']
+          use: ['to-string-loader', 'css-loader?minimize']
         },
         {
           test: /\.css$/,
           include: [ helpers.root('app/styles.css') ],
-          use: ['style-loader', 'css-loader']
+          use: ['style-loader', 'css-loader?minimize']
         },
 
         /* Raw loader support for *.html
@@ -149,6 +149,19 @@ module.exports = function (options) {
           test: /\.(jpg|png|gif)$/,
           use: 'file-loader'
         },
+        /*
+        用tree-shaking减少打包代码大小
+         */
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              [ 'es2015', { modules: false } ]
+            ]
+          }
+        }
 
       ],
 
