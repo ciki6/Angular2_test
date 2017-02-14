@@ -20,6 +20,9 @@ import { WebSocketComponent  } from './websocket.component';
 import { SwiperComponent  } from './swiper.component';
 import { AppRoutingModule }     from './app-routing.module';
 import './rxjs-extensions';
+import '../test.js';
+require('!style-loader!css-loader!../styles.css');
+
 
 
 const SWIPER_CONFIG: SwiperConfigInterface = {
