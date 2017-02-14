@@ -31,3 +31,6 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+配置还要研究和调整，有点小问题，直接import的css文件打包之后不会调用style-loader
