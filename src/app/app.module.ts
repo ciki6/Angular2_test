@@ -22,6 +22,7 @@ import { AppRoutingModule }     from './app-routing.module';
 import './rxjs-extensions';
 import '../test.js';
 require('!style-loader!css-loader!../styles.css');
+require('!style-loader!css-loader!../../node_modules/bootstrap/dist/css/bootstrap.css');
 
 
 
